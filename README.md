@@ -1,2 +1,1 @@
-# Xamarin-Cross-Platform-Crypto
-Camarín Cross Platform Crypto
+# Xamarin Cross Platform Crypto

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App7Crypto"
+             x:Class="App7Crypto.MainPage">
+
+    <StackLayout VerticalOptions="Center" Margin="20">
+
+        <Label x:Name="lbBinaryEncrypt" Text="Binary Encrypt"/>
+        <Label x:Name="entryBinaryEncrypt" 
+               VerticalOptions="Center" 
+               HorizontalOptions="CenterAndExpand" 
+               />
+
+        <Label x:Name="lbBinaryDecrypt" Text="Binary Decrypt"/>
+        <Label x:Name="entryBinaryDecrypt" 
+               VerticalOptions="Center" 
+               HorizontalOptions="CenterAndExpand"  Margin="0,0,0,20"/>
+
+        <Label x:Name="lbStringEncrypt" Text="String Encrypt" />
+        <Label x:Name="entryStringEncrypt" 
+               VerticalOptions="Center" 
+               HorizontalOptions="CenterAndExpand" />
+
+        <Label x:Name="lbStringDecrypt" Text="String Decrypt" />
+        <Label x:Name="entryStringDecrypt" 
+               VerticalOptions="Center" 
+               HorizontalOptions="CenterAndExpand" Margin="0,0,0,20"/>
+
+        <StackLayout Orientation="Horizontal" IsVisible="False">
+            <Label Text="String" HorizontalOptions="Start"/>
+            <Switch x:Name="_switch" VerticalOptions="Center"  HorizontalOptions="CenterAndExpand" />
+            <Label Text="Binary" />
+        </StackLayout>
+        
+        <Entry x:Name="entry" 
+               VerticalOptions="Center" 
+               HorizontalOptions="Fill" 
+               Margin="0,10,0,20" />
+
+        <Button x:Name="button" Text="Encrypt" Clicked="button_Clicked" />
+        
+    </StackLayout>
+
+</ContentPage>
